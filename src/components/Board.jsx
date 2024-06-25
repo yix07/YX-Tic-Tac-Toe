@@ -1,7 +1,7 @@
 import Line from "./Line";
 import Tile from "./Tile";
 
-function Board({ tiles, onTileClick, playerTurn }) {
+function Board({ tiles, onTileClick, playerTurn, lineClass }) {
     return(
         <div className="board"> 
             <Tile playerTurn={playerTurn} onClick={() => onTileClick(0)} value={tiles[0]} className='right-border bottom-border'></Tile>
@@ -13,7 +13,7 @@ function Board({ tiles, onTileClick, playerTurn }) {
             <Tile playerTurn={playerTurn} onClick={() => onTileClick(6)} value={tiles[6]} className='right-border'></Tile>
             <Tile playerTurn={playerTurn} onClick={() => onTileClick(7)} value={tiles[7]} className='right-border'></Tile>
             <Tile playerTurn={playerTurn} onClick={() => onTileClick(8)} value={tiles[8]}></Tile>
-            <Line></Line>
+            <Line lineClass={lineClass}></Line>
         </div>
     );
 }

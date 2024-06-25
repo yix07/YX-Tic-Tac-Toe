@@ -1,6 +1,6 @@
-function Line() {
+function Line({ lineClass }) {
     return (
-        <div></div>
+        <div className={`line ${lineClass}`}></div>
     );
 }
 
