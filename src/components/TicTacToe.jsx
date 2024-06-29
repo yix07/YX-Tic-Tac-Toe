@@ -3,6 +3,8 @@ import Board from "./Board";
 import GameOver from "./GameOver";
 import GameState from "./GameState";
 import PlayAgain from "./PlayAgain";
+import { findBestMove } from "./AI";
+import ModeSelection from './ModeSelection';
 
 const PLAYER_X = "X";
 const PLAYER_O = "O";
@@ -48,51 +50,62 @@ function checkWin(tiles, setLineClass, setGameState) {
 }
 
 function TicTacToe() {
+    const [mode, setMode] = useState(null);
     const [tiles, setTiles] = useState(Array(9).fill(null));
     const [playerTurn, setPlayerTurn] = useState(PLAYER_X);
     const [lineClass, setLineClass] = useState();
     const [gameState, setGameState] = useState(GameState.inProgress);
+    const [isVsAI, setIsVsAI] = useState(false);
 
     useEffect(() => {
-        checkWin(tiles, setLineClass, setGameState);
-    }, [tiles])
+        const winner = checkWin(tiles, setLineClass, setGameState);
+        if (gameState === GameState.inProgress && playerTurn === PLAYER_O && isVsAI && !winner) {
+            const bestMove = findBestMove(tiles);
+            if (bestMove !== null) {
+                handleTileClick(bestMove);
+            }
+        }
+    }, [tiles, playerTurn, gameState, isVsAI]);
 
     const handleTileClick = (index) => {
-        if (gameState !== GameState.inProgress) {
+        if (gameState !== GameState.inProgress || tiles[index] !== null) {
             return;
         }
-
-        if (tiles[index] !== null) {
-            return;
-        }
-
-        const newTiles = [... tiles];
+        const newTiles = [...tiles];
         newTiles[index] = playerTurn;
         setTiles(newTiles);
-
+        
         if (playerTurn === PLAYER_X) {
             setPlayerTurn(PLAYER_O);
-        }
-        else {
+        } else {
             setPlayerTurn(PLAYER_X);
         }
-    }
+    };
 
     const handleReset = () => {
         setGameState(GameState.inProgress);
         setPlayerTurn(PLAYER_X);
         setTiles(Array(9).fill(null));
         setLineClass(null);
+    };
+
+    const handleModeSelect = (selectedMode) => {
+        setIsVsAI(selectedMode === 'ai');
+        setMode(selectedMode);
+        handleReset();
+    };
+
+    if (mode === null) {
+        return <ModeSelection onModeSelect={handleModeSelect} />;
     }
 
     return (
         <div>
-            <h1>Tic Tac Toe</h1>  
-            <Board lineClass={lineClass} playerTurn={playerTurn} tiles={tiles} onTileClick={handleTileClick}></Board>  
-            <GameOver gameState={gameState}></GameOver> 
-            <PlayAgain gameState={gameState} onReset={handleReset}></PlayAgain>   
+            <Board lineClass={lineClass} playerTurn={playerTurn} tiles={tiles} onTileClick={handleTileClick} />
+            <GameOver gameState={gameState} />
+            <PlayAgain gameState={gameState} onReset={handleReset} />
         </div>
-    )
+    );
 }
 
 export default TicTacToe;

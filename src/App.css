@@ -1,13 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Neucha&display=swap');
+
+ html, body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;  
+  overflow-y: hidden;
+} 
+
 body {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  background-color: #242730;
-  color: white;
+  background-color: white;
+  color: black;
+  font-family: 'Neucha', sans-serif;
 }
 
 h1 {
   text-align: center;
+  font-size: 7em;
+  overflow: hidden;
+  position: relative;
+  white-space: nowrap;
+  width: 0;
+  animation: animate 3s steps(100, end) forwards; /* Ensure animation is forwards */
+}
+
+@keyframes animate {
+  from { 
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
 }
 
 .board {
@@ -27,11 +52,11 @@ h1 {
 }
 
 .right-border {
-  border-right: 0.2em solid #0074a6;
+  border-right: 0.2em solid black;
 }
 
 .bottom-border {
-  border-bottom: 0.2em solid #0074a6;
+  border-bottom: 0.2em solid black;
 }
 
 .x-hover:hover::after {
@@ -46,7 +71,7 @@ h1 {
 
 .line {
   position: absolute;
-  background-color: darkorange;
+  background-color: black;
 }
 
 .line-row-1 {
@@ -96,7 +121,7 @@ h1 {
 
 .game-over {
   text-align: center;
-  border: #5468ff 8px;
+  border: black 8px;
   border-style: dotted;
   padding: 10px;
   margin-top: 50px;
@@ -106,9 +131,93 @@ h1 {
 .reset {
   margin-top: 50px;
   padding: 20px;
-  background-color: #0074a6;
+  background-color: black;
   color: white;
   width: 100%;
   font-size: 1.5em;
 }
+
+/* New styles for notebook paper look */
+.notebook-paper {
+  width: 100vw;
+  height: 100vh;
+  background: 
+    url('/Users/yee0730/Desktop/tic-tac-toe/public/transparent_border.png') top center no-repeat;
+  background-size: auto, 100% 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+  background-color: white; /* Ensure the background color is set */
+  padding: 250px;
+}
+
+.mode-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+.mode-selection button {
+  background-color: transparent;
+  border: 2px solid black;
+  color: transparent;
+  padding: 20px 40px;
+  margin: 20px;
+  font-size: 1.75em;
+  font-family: 'Neucha', sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative; /* Required for pseudo-element positioning */
+  overflow: hidden; /* Hide the overflowing text during animation */
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add initial shadow */
+}
+
+.mode-selection button::after {
+  content: attr(data-text); /* Use the data-text attribute to hold the button text */
+  color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: animate 1.5s steps(100, end) forwards;
+}
+
+@keyframes animate {
+  from { 
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.mode-selection button:hover {
+  transform: translateY(5px); /* Move the button down */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.75); /* Increase shadow to create pressed effect */
+}
+
+.mode-selection button:active {
+  transform: translateY(8px); /* Move further down to simulate pressing */
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Decrease shadow when fully pressed */
+}
+
+
+
+
+
+
 
