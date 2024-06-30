@@ -64,7 +64,8 @@ function minimax(tiles, depth, isMaximizing) {
             }
         }
         return bestScore;
-    } else {
+    } 
+    else {
         let bestScore = Infinity;
         for (let i = 0; i < availableMoves.length; i++) {
             const move = availableMoves[i];

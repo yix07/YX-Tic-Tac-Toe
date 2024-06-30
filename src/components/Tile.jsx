@@ -25,7 +25,8 @@ function Tile({ className, value, onClick, playerTurn, reset }) {
     if (value == null && playerTurn != null) {
         if (playerTurn.toLowerCase() === 'x') {
             hoverVar = 'x-hover';
-        } else if (playerTurn.toLowerCase() === 'o') {
+        } 
+        else if (playerTurn.toLowerCase() === 'o') {
             hoverVar = 'o-hover';
         }
     }

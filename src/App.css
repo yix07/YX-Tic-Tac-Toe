@@ -23,7 +23,7 @@ h1 {
   position: relative;
   white-space: nowrap;
   width: 0;
-  animation: animate 3s steps(100, end) forwards; /* Ensure animation is forwards */
+  animation: animate 3s steps(100, end) forwards; 
 }
 
 @keyframes animate {
@@ -42,8 +42,6 @@ h1 {
   cursor: pointer;
   position: relative;
 }
-
-/* Add these new styles for flip animation */
 
 .tile {
   color: currentColor;
@@ -117,31 +115,37 @@ h1 {
   height: 4px;
   top: 15%;
 }
+
 .line-row-2 {
   width: 100%;
   height: 4px;
   top: 48%;
 }
+
 .line-row-3 {
   width: 100%;
   height: 4px;
   top: 83%;
 }
+
 .line-column-1 {
   height: 100%;
   width: 4px;
   left: 15%;
 }
+
 .line-column-2 {
   height: 100%;
   width: 4px;
   left: 48%;
 }
+
 .line-column-3 {
   height: 100%;
   width: 4px;
   left: 83%;
 }
+
 .line-diagonal-1 {
   width: 90%;
   height: 4px;
@@ -149,6 +153,7 @@ h1 {
   left: 5%;
   transform: skewY(45deg);
 }
+
 .line-diagonal-2 {
   width: 90%;
   height: 4px;
@@ -176,27 +181,26 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  position: relative; /* Required for pseudo-element positioning */
-  overflow: hidden; /* Hide the overflowing text during animation */
+  position: relative; 
+  overflow: hidden; 
   border-bottom-left-radius: 15px 255px;
   border-bottom-right-radius: 225px 15px;
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add initial shadow */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
   width: 90%;
 }
 
 .reset:hover {
-  transform: translateY(5px); /* Move the button down */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 1); /* Increase shadow to create pressed effect */
+  transform: translateY(5px); 
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 1); 
 }
 
 .reset:active {
-  transform: translateY(8px); /* Move further down to simulate pressing */
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Decrease shadow when fully pressed */
+  transform: translateY(8px); 
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); 
 }
 
-/* New styles for notebook paper look */
 .notebook-paper {
   width: 100vw;
   height: 100vh;
@@ -210,7 +214,7 @@ h1 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
   position: relative;
   overflow: hidden;
-  background-color: white; /* Ensure the background color is set */
+  background-color: white; 
   padding: 250px;
 }
 
@@ -233,17 +237,17 @@ h1 {
   border-radius: 5px;
   cursor: pointer;
   transition: all 0.3s ease;
-  position: relative; /* Required for pseudo-element positioning */
-  overflow: hidden; /* Hide the overflowing text during animation */
+  position: relative; 
+  overflow: hidden; 
   border-bottom-left-radius: 15px 255px;
   border-bottom-right-radius: 225px 15px;
   border-top-left-radius: 255px 15px;
   border-top-right-radius: 15px 225px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Add initial shadow */
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); 
 }
 
 .mode-selection button::after {
-  content: attr(data-text); /* Use the data-text attribute to hold the button text */
+  content: attr(data-text); 
   color: black;
   position: absolute;
   top: 50%;
@@ -265,13 +269,13 @@ h1 {
 }
 
 .mode-selection button:hover {
-  transform: translateY(5px); /* Move the button down */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 1); /* Increase shadow to create pressed effect */
+  transform: translateY(5px); 
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 1); 
 }
 
 .mode-selection button:active {
-  transform: translateY(8px); /* Move further down to simulate pressing */
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); /* Decrease shadow when fully pressed */
+  transform: translateY(8px); 
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .homepage-button {
@@ -290,7 +294,6 @@ h1 {
   transform: rotate(90deg);
 }
 
-/* New styles for social media icons */
 .social-icons {
   position: absolute;
   bottom: 50px;

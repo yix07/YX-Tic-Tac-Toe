@@ -1,5 +1,5 @@
 import React from 'react';
-import '../App.css'; // Ensure the path to App.css is correct
+import '../App.css'; 
 
 function ModeSelection({ onModeSelect }) {
   return (

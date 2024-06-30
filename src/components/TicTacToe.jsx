@@ -86,7 +86,8 @@ function TicTacToe() {
 
         if (currentPlayer === PLAYER_X) {
             setPlayerTurn(PLAYER_O);
-        } else {
+        } 
+        else {
             setPlayerTurn(PLAYER_X);
         }
     };
@@ -106,7 +107,8 @@ function TicTacToe() {
         setIsVsAI(selectedMode === 'player-vs-ai');
         if (selectedMode === 'player-vs-ai') {
             setMode('player-choice');
-        } else {
+        } 
+        else {
             setMode(selectedMode);
             handleReset();
         }
