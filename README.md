@@ -4,7 +4,7 @@
 
 ### Play the game here:
 
-https://github.com/yix07/Tic-Tac-Toe-AI/
+https://yix07.github.io/Tic-Tac-Toe/
 
 A Tic-Tac-Toe game built with React that features two game modes.
 
