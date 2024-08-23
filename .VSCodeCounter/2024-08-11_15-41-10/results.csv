@@ -1,0 +1,26 @@
+"filename", "language", "JavaScript", "JavaScript JSX", "CSS", "JSON", "Python", "HTML", "Markdown", "comment", "blank", "total"
+"/Users/yee0730/Desktop/tic-tac-toe/README.md", "Markdown", 0, 0, 0, 0, 0, 0, 7, 0, 6, 13
+"/Users/yee0730/Desktop/tic-tac-toe/package-lock.json", "JSON", 0, 0, 0, 18440, 0, 0, 0, 0, 1, 18441
+"/Users/yee0730/Desktop/tic-tac-toe/package.json", "JSON", 0, 0, 0, 44, 0, 0, 0, 0, 1, 45
+"/Users/yee0730/Desktop/tic-tac-toe/public/color.py", "Python", 0, 0, 0, 0, 13, 0, 0, 0, 7, 20
+"/Users/yee0730/Desktop/tic-tac-toe/public/index.html", "HTML", 0, 0, 0, 0, 0, 17, 0, 0, 1, 18
+"/Users/yee0730/Desktop/tic-tac-toe/public/manifest.json", "JSON", 0, 0, 0, 25, 0, 0, 0, 0, 1, 26
+"/Users/yee0730/Desktop/tic-tac-toe/public/remove_brown_background.py", "Python", 0, 0, 0, 0, 19, 0, 0, 0, 15, 34
+"/Users/yee0730/Desktop/tic-tac-toe/src/App.css", "CSS", 0, 0, 273, 0, 0, 0, 0, 0, 38, 311
+"/Users/yee0730/Desktop/tic-tac-toe/src/App.js", "JavaScript", 8, 0, 0, 0, 0, 0, 0, 0, 3, 11
+"/Users/yee0730/Desktop/tic-tac-toe/src/App.test.js", "JavaScript", 7, 0, 0, 0, 0, 0, 0, 0, 2, 9
+"/Users/yee0730/Desktop/tic-tac-toe/src/components/AI.jsx", "JavaScript JSX", 0, 90, 0, 0, 0, 0, 0, 0, 13, 103
+"/Users/yee0730/Desktop/tic-tac-toe/src/components/Board.jsx", "JavaScript JSX", 0, 19, 0, 0, 0, 0, 0, 0, 2, 21
+"/Users/yee0730/Desktop/tic-tac-toe/src/components/GameOver.jsx", "JavaScript JSX", 0, 16, 0, 0, 0, 0, 0, 0, 2, 18
+"/Users/yee0730/Desktop/tic-tac-toe/src/components/GameState.jsx", "JavaScript JSX", 0, 7, 0, 0, 0, 0, 0, 0, 1, 8
+"/Users/yee0730/Desktop/tic-tac-toe/src/components/Line.jsx", "JavaScript JSX", 0, 6, 0, 0, 0, 0, 0, 0, 1, 7
+"/Users/yee0730/Desktop/tic-tac-toe/src/components/ModeSelection.jsx", "JavaScript JSX", 0, 22, 0, 0, 0, 0, 0, 0, 3, 25
+"/Users/yee0730/Desktop/tic-tac-toe/src/components/PlayAgain.jsx", "JavaScript JSX", 0, 8, 0, 0, 0, 0, 0, 0, 2, 10
+"/Users/yee0730/Desktop/tic-tac-toe/src/components/PlayerChoice.jsx", "JavaScript JSX", 0, 14, 0, 0, 0, 0, 0, 0, 3, 17
+"/Users/yee0730/Desktop/tic-tac-toe/src/components/TicTacToe.jsx", "JavaScript JSX", 0, 133, 0, 0, 0, 0, 0, 3, 19, 155
+"/Users/yee0730/Desktop/tic-tac-toe/src/components/Tile.jsx", "JavaScript JSX", 0, 41, 0, 0, 0, 0, 0, 0, 13, 54
+"/Users/yee0730/Desktop/tic-tac-toe/src/index.css", "CSS", 0, 0, 12, 0, 0, 0, 0, 0, 2, 14
+"/Users/yee0730/Desktop/tic-tac-toe/src/index.js", "JavaScript", 12, 0, 0, 0, 0, 0, 0, 3, 3, 18
+"/Users/yee0730/Desktop/tic-tac-toe/src/reportWebVitals.js", "JavaScript", 12, 0, 0, 0, 0, 0, 0, 0, 2, 14
+"/Users/yee0730/Desktop/tic-tac-toe/src/setupTests.js", "JavaScript", 1, 0, 0, 0, 0, 0, 0, 4, 1, 6
+"Total", "-", 40, 356, 285, 18509, 32, 17, 7, 10, 142, 19398
