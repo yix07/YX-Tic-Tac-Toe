@@ -2,7 +2,7 @@
   "name": "tic-tac-toe",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://yix07.github.io/Tic-Tac-Toe/",
+  "homepage": "https://yix07.github.io/YX-Tic-Tac-Toe/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
