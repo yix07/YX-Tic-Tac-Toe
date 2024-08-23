@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Tic-Tac-Toe/static/css/main.9a7ecff1.css",
-    "main.js": "/Tic-Tac-Toe/static/js/main.ae491f15.js",
-    "static/js/453.e036e8b5.chunk.js": "/Tic-Tac-Toe/static/js/453.e036e8b5.chunk.js",
-    "static/media/transparent_border.png": "/Tic-Tac-Toe/static/media/transparent_border.56ff0727b490d1f765cf.png",
-    "index.html": "/Tic-Tac-Toe/index.html",
-    "main.9a7ecff1.css.map": "/Tic-Tac-Toe/static/css/main.9a7ecff1.css.map",
-    "main.ae491f15.js.map": "/Tic-Tac-Toe/static/js/main.ae491f15.js.map",
-    "453.e036e8b5.chunk.js.map": "/Tic-Tac-Toe/static/js/453.e036e8b5.chunk.js.map"
+    "main.css": "/YX-Tic-Tac-Toe/static/css/main.46c87b05.css",
+    "main.js": "/YX-Tic-Tac-Toe/static/js/main.709de2d0.js",
+    "static/js/453.e036e8b5.chunk.js": "/YX-Tic-Tac-Toe/static/js/453.e036e8b5.chunk.js",
+    "static/media/transparent_border.png": "/YX-Tic-Tac-Toe/static/media/transparent_border.56ff0727b490d1f765cf.png",
+    "index.html": "/YX-Tic-Tac-Toe/index.html",
+    "main.46c87b05.css.map": "/YX-Tic-Tac-Toe/static/css/main.46c87b05.css.map",
+    "main.709de2d0.js.map": "/YX-Tic-Tac-Toe/static/js/main.709de2d0.js.map",
+    "453.e036e8b5.chunk.js.map": "/YX-Tic-Tac-Toe/static/js/453.e036e8b5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9a7ecff1.css",
-    "static/js/main.ae491f15.js"
+    "static/css/main.46c87b05.css",
+    "static/js/main.709de2d0.js"
   ]
 }
